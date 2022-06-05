@@ -1,16 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script src="./index4.js"></script> 
-    <script>
-        // document.write("帥爛了")
-    </script>
-    <script src="script.js"></script>
-</body>
+<!DOCTYPE html> <!-- 告訴瀏覽器他是HTML的檔案 -->
+<html>
+    <head>
+        <meta charset="UTF-8"></meta> <!-- 告知瀏覽器用UTF-8編碼、 charset是meta的屬性--> 
+        <meta name="description" content="我的網站，裡面有很多教學影片" /><!--讓搜尋引擎知道這個網頁是幹嘛的-->
+        <meta name="author" content="阿成">
+        <meta name="keywords" content="阿成, html, 練習"/>
+        <meta name="viewport" content="width=diviec-width, initial-scale=1.0" /> <!--會依據不同裝置的視窗大小作等比例調整-->
+        <title >我的網頁</title>
+    </head>
+    <body>
+        <h3>這是文章的標題</h3>
+        <p>這是<i><b>阿成</b></i>文章的段落</p>
+        <br/> <!--換行標籤-->
+        <hr> <!--水平線-->
+        <h3>這是第二篇文章的標題</h3>
+
+        <!-- 連結&圖片 -->
+
+        <a href="https://google.com">google網站</a> <!-- href是a的屬性 -->
+        <a href="page2.html">第二頁</a>
+        <a href="page3 dir/page3.html">第三頁</a>
+        <a href="brid.jpg">照片</a>
+        <br>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/%E2%99%82_Common_Kingfisher_%28Alcedo_atthis%29_Photograph_By_Shantanu_Kuveskar%2C_Mangaon%2C_Maharashtra%2C_India.jpg/220px-%E2%99%82_Common_Kingfisher_%28Alcedo_atthis%29_Photograph_By_Shantanu_Kuveskar%2C_Mangaon%2C_Maharashtra%2C_India.jpg"/>
+        <img src="brid.jpg" width="50" height="50"/> <!-- 會被壓縮-->
+
+        <!-- 影片& 嵌入Youtube 影片-->
+        <br>
+        <video src="15_Second_Meme.mp4" controls width="400" height="400">瀏覽器無法載入影片</video>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dMTy6C4UiQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!-- 從youtube直接嵌入-->
+    
+        <!-- 列表&表格 -->
+        <ol type="i" style="color:red;"> <!-- ol是有排序 ul則沒排序-->
+            <li>google</li>
+            <li>META</li>
+            <li>IG</li>
+            <li>PTT</li>
+        </ol>
+        
+        <table width="400" height="315" >
+            <tr> <!-- 第一行-->
+                <td> <h3><b><i>日期</i></b></h1></td>
+                <td>數學</td>
+                <td>英文</td>
+            </tr>
+            <tr> <!-- 第二行-->
+                <td>5/1</td>
+                <td>20</td>
+                <td>30</td>
+            </tr>
+        </table>
+
+        <!-- html的容器 div&span-->
+
+        <div style="color:red;"> <!-- 導入CSS的時候有用div會方便很多，就不用上面的列跟表格都套用CSS，只要寫一次 -->
+            <table width="400" height="315" >
+                <tr> <!-- 第一行-->
+                    <td>日期</td>
+                    <td>數學</td>
+                    <td>英文</td>
+                </tr>
+                <tr> <!-- 第二行-->
+                    <td>5/1</td>
+                    <td>20</td>
+                    <td>30</td>
+                </tr>
+            </table>    
+        </div>
+
+        <a href="#">link</a>
+        <a href="#">link2</a> <!-- 內容連載一起，並沒有一個就佔掉一整行-->
+        <hr/>
+        <p>你好</p> <!-- 會站掉整個畫面的一整行 -->
+        <p>哈哈</p>          
+        
+        <span>test1</span>
+        <span>test2</span> 
+        <hr/>
+        <div>test3</div>
+        <diV>test4</diV> <!--會佔掉一整行，!常用的-->
+
+        <!--html輸入標籤-->
+        <input type="text" placeholder="請輸入您的帳號" /> <!--帳號-->
+        <br/>
+        <br/>
+        <input type="password" placeholder="請輸入您的密碼" /> <!--密碼-->
+        <br/>
+        <input type="date"  />
+        <br/>
+        <input type="range"  />
+        <br/>
+        <input type="checkbox"  />
+        <br/>
+        <textarea></textarea> <!--可輸入很多文字-->
+    </body>
 </html>
